@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Meta tags and title -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Responsive Portfolio website</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!--- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <main>
+    
+<!-- Sidebar -->
+<aside class="col-md-3 sidebar" data-sidebar> 
+<!-- Personal info -->
+      <div class="sidebar-info">
+<!-- Avatar -->
+<!-- Name and title -->
+<!-- Show contacts button -->
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Jacob Jayen Pillai" width="80">
+        </figure>
+ <!-- Add zoom-in effect to portfolio items -->
+<div class="project-item zoomIn">
+  <a href="#">
+      <figure class="project-img">
+          <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <img src="./assets/images/project-1.jpg" alt="Finance" loading="lazy">
+      </figure>
+      <h3 class="project-title">Finance</h3>
+      <p class="project-category">Web development</p>
+  </a>
+</div>
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Jacob Jayen Pillai</h1>
+
+          <p class="title">Software developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+<!-- Additional sidebar info (contact details, social links) -->
+      <div class="sidebar-info_more">
+<!-- Contact list -->
+        <!-- Social media links -->
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jacobjayenpillai@gmail.com" class="contact-link">jacobjayenpillai@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+60166128291" class="contact-link">+60 16-612-8291</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Date of Birth</p>
+
+              <time datetime="2004-09-22">September 22nd, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>SubangJaya, Selangor, Malaysia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+        <p class="social-media-text">Social Media</p><br>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=100010366686226" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="social-item">
+            <a href="https://x.com/JacobP77061" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.instagram.com/jacob_0922_/?next=%2F" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jacob-jayen-pillai-130a6233b/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        
+        <div class="separator"></div>
+        <div class="cta-buttons">
+          <a href="javascript:void(0);" onclick="document.querySelector('[data-nav-link]:nth-child(5)').click();" class="btn-primary hire-me-btn">
+            <ion-icon name="mail-outline"></ion-icon>
+            Hire Me
+          </a>
+          <a href="./assets/files/Jacob_Jayen_Pillai_CV.pdf" download class="btn-secondary download-cv-btn">
+            <ion-icon name="download-outline"></ion-icon>
+            Download CV
+          </a>
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!--- #main-content-->
+
+    <div class="main-content">
+
+      <!---#NAVBAR-->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--- #ABOUT -->
+
+<!-- About section -->
+      <article class="about  active" data-page="about">
+<!-- About me text -->
+        <!-- Services section -->
+        <!--Hobby Section-->
+        <!-- Testimonials section -->
+        <!-- Testimonials modal -->
+        <!-- Clients section -->
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a college student at International INTI College Subang who's pursuing a diploma in Information Technology fulltime. 
+            My job as a developer is to build websites and applications that are functional and user-friendly while also being attractive.
+            Moreover, I would add personal touches to your product making sure it is eye-catching and easy to use as my aim to bring
+            across my message and identity in the most creative way.
+          </p>
+            
+          
+        </section>
+
+
+        <!--- service section-->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm able to do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Design</h4>
+
+                <p class="service-item-text">
+                  Modern and high-quality design made with professional design tools.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality websites with interactive and beneficial purpose of every features.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile Development</h4>
+
+                <p class="service-item-text">
+                  Beginner development of applications for iOS and Android to improve producitivity of others.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/computer_icon.jpg " alt="camera icon" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Editing</h4>
+
+                <p class="service-item-text">
+                  High Quality video editing that others can't resist to engage with.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-quote.svg" alt="computer_icon" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Maintenance</h4>
+
+                <p class="service-item-text">
+                  Basics of Maintenance for computer hardware and networks systems troubleshooting.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="computer_icon" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photo Editing</h4>
+
+                <p class="service-item-text">
+                  Producing stunning photos that can be used for social media platforms.  
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--Hobby Section-->
+        <section class="Hobby">
+
+          <h3 class="h3 Hobby-title">Hobbies</h3>
+
+          <ul class="Hobby">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/64dc1ed3a926ddaf9d6eecab_importance-of-editing.jpg" alt="design icon" width="80" height="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Editing</h4>
+
+                <p class="service-item-text">
+                  Edit stellar videos that can be used for increasing engagement rate on social media platforms.
+                </p>
+              </div>
+            </li><br>
+<!--coding during free time-->
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/images.jpeg" alt="computer_icon" width="80" height="80">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Coding</h4>
+  
+                  <p class="service-item-text">
+                  Learning to create mobile applications and websites that benefit other people and automate repetitive tasks reducing the memory stress on the device.
+                  </p>
+                </div>
+
+            </li><br>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Conversation.jpg" alt="computer_icon" width="80" height="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Networking</h4>
+
+                <p class="service-item-text">
+                Having Conversation with friends to catch up on how they've been doing, meeting new friends and wise people, networking with high-quality people that seems impossible to chat with.
+                </p>
+              </div>
+
+            </li>
+          </ul>
+        </section><br>
+
+        <!---testimonials segment-->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Darshan</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    He was my classmate at INTI College Subang and he assisted me in web development classes to get through the course efficiently.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Miss Siti</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    He's learning web development and according to his portfolio, he's a interesting exceptional person.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Miss Aini</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    The results that he produced for the capstone project is amazing and he's a great team player.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mr Thanesh</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                      He's a interesting person to talk and able to complete set tasks efficiently with effective results.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--- testimonials modal with overlay animation for close detail -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 September, 2024</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience and is very concerned about the needs of client.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--- response from clients in projects -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Projects</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.youtube.com/@jacobpillai">
+                <img src="./assets/images/youtube.png" alt="client logo">
+                <p class="youtube-channel-text">Youtube channel</p>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://youtu.be/15ka-UfOcfA?si=Ix15oBijZNOsFGCw">
+                <img src="./assets/images/hq720(portfolio_website).jpg" alt="client logo"><br>  
+                <p class="youtube-channel-text">Portfolio website tutorial</p>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://youtu.be/EerdGm-ehJQ?si=UC49foPwxnUSyaO2">
+                <img src="./assets/images/maxresdefault(Javascript).jpg" alt="JavaScript logo">
+                <p class="youtube-channel-text">JavaScript tutorial</p>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://youtu.be/srjaFkPvILY?si=Hwkrp8Kae5i0zkHn">
+                <img src="./assets/images/Screenshot 2024-12-19 074111(e-commerce website).png" alt="client logo">
+                <p class="youtube-channel-text">Responsive E-commerce Website</p>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://youtu.be/eIrMbAQSU34?si=6tbhdg3FbW6-ocUl">
+                <img src="./assets/images/java.jpg" alt="client logo">
+                <p class="youtube-channel-text">Java tutorial for beginner</p>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://youtu.be/YSO9LwT5Qjo?si=ZFE281VfoFNj2ppS">
+                <img src="./assets/images/rarin-decals.jpg" alt="client logo"><br>
+                <p class="youtube-channel-text">Rarin - Decals</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--- #RESUME -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">INTI International College Subang</h4>
+
+              <span>2022 — 2025</span>
+
+              <p class="timeline-text">
+                Studying in INTI International College Subang currently to pursue a diploma in Information Technology for better career opportunties 
+                and understand how daily technology will affect our routines as the world is advancing rapidly.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Pan Mee Shop</h4>
+
+              <span>2017/11 — 2017/12</span>
+
+              <p class="timeline-text">
+                Worked in Cashier, material preparation, cleaning tables, taking orders, and getting asked why im working at young age rather than studying in school
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Intern - IT Support</h4>
+
+              <span>2025/01/02 - 2025/04/17</span>
+
+              <p class="timeline-text">
+              Learnt about the basics of IT support and how to troubleshoot computer hardware and networks systems for users 
+              to get through the course efficiently with effective results that can be used in the real world.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+<!--skills section with front-end development, programming languages, creative skills and soft skills-->
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+<!--front-end development-->
+            <li class="skills-item">
+              <div class="skill-text">
+                <h5 class="h5">Front-end Development</h5>
+                <p>HTML, CSS, JavaScript, React, Node.js, Next.js, Tailwind CSS, Firebase - 
+                  Comfortable creating responsive websites with modern design patterns. Experience with the basics of React, Node.js, Next.js, Tailwind CSS, Firebase.</p>
+              </div>
+            </li>
+<!--programming languages-->
+            <li class="skills-item">
+              <div class="skill-text">
+                <h5 class="h5">Programming Languages</h5>
+                <p>Java (Intermediate), C++ (Beginner), MySQL (Basic) - Proficient in object-oriented programming concepts and database queries.</p>
+              </div>
+            </li>
+<!--creative skills-->
+            <li class="skills-item">
+              <div class="skill-text">
+                <h5 class="h5">Creative Skills</h5>
+                <p>Video Editing - Experienced with simple transitions and effects for centering the content. <br>
+                   Photo Editing - Retouching and composition to increase attractiveness on social media platforms.</p>
+              </div>
+            </li>
+<!--soft skills-->
+            <li class="skills-item">
+              <div class="skill-text">
+                <h5 class="h5">Soft Skills</h5>
+                <p>Strong curiosity to learn, good communication, adaptable team player with problem-solving abilities.</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--- #PORTFOLIO section-->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Video Editing</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down">Select</ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Video Editing</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="Video Editing">
+              <a href="https://youtu.be/ibxrZUSMny4?si=YccHI3n32kyJQaUR">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/hq720.jpg" alt="Youtube" loading="lazy">
+                </figure>
+                <h3 class="project-title">Youtube</h3>
+                <p class="project-category">(SLOWED) PASSO BEM SOLTO 💃 - VALORANT [Edit/Montage]</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Video Editing">
+              <a href="https://youtu.be/SgpMtczbrKM?si=8yy21Fv00PFExEUQ">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/valorant_thumbnail.png" alt="Youtube" loading="lazy">
+                </figure>
+                <h3 class="project-title">Youtube</h3>
+                <p class="project-category">valorant funny moments that will make your day</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Video Editing">
+              <a href="https://youtu.be/7L_dC40SLHM?si=wB5ZXmt0t4VpRTUw" target="_blank">
+                  <figure class="project-img">
+                      <div class="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/F6zm81Pa0AA1IXD_nublek.jpg" alt="Homepage" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Valorant Content</h3>
+                  <p class="project-category">Video Editing</p>
+              </a>
+          </li>
+
+            
+            
+
+            <li class="project-item  active" data-filter-item data-category="Web development">
+              <a href="https://youtu.be/VmHV5wWNxVo?si=Ij_b24XgPB_HOYw9">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/expense tracker js.jpg" alt="Expense tracker(reference)" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Expense tracker(reference)</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Web development">
+              <a href="https://youtu.be/5O0YDHiosD0?si=UcQmYCBaBqzCyKit">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio.jpeg" alt="html css JavaScript portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">html css JavaScript portfolio</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Web development">
+              <a href="https://youtu.be/UnvsUEA71BA?si=WrGlCbv7h37DErF6">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/(meal_finder-17thDec2024).png" alt="Meal Finder application" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Meal Finder(reference)</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--- #BLOG section-->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://youtu.be/oIMfFz76a1M?si=2EpA2EtqKYIsk2e_">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/thumbnail copy.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Youtube</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-10-13">October 10, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Walking On a Dream - valorant montage</h3>
+
+                  <p class="blog-text">
+                    This video is inspired by another editor that is insane in syncing also known as Flea.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://youtu.be/yU_JgeAIRko?si=-ajjmxSVCS1nmtin">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/maxresdefault.jpg" alt="Animated website for every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Animated website for every designer</h3>
+
+                  <p class="blog-text">
+                    Tutorial on how to make your own animated website using html && css.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://youtu.be/FazgJVnrVuI?si=4fNOcH8hUAR0lu4w">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/pic1.svg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Sep 14, 2020</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Responsive website design</h3>
+
+                  <p class="blog-text">
+                    Simple tutorial on creating responsive website design with html, css and JavaScript.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://youtu.be/9iqRdJ1fdcM?si=oj_FTRBu18fs32xx">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/hq720 (rarin-mamacita).jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Video Editing</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"> Aug 9, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Underrated Artist in music industry</h3>
+
+                  <p class="blog-text">
+                    Rarin is a underrated artist in music industry that can be used in editing and listen enjoyability due to smooth transitions 
+                    in lyrics and music production that makes you wanna dance and vibe with.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--- #CONTACT section--->
+
+      <article class="contact" data-page="contact" id="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+<!--creating a link that has frame showing the location using embed link from google maps with width = 400 and height = 300-->  
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1972124917875!2d101.56993321133453!3d3.041746596921309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4cd651b4efcf%3A0x741284b3bca6f69a!2s22%2C%20Jalan%20USJ%2012%2F1d%2C%20Usj%2012%2C%2047630%20Subang%20Jaya%2C%20Selangor!5e0!3m2!1sen!2smy!4v1728821562411!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="from_name" class="form-input" placeholder="Your Name" required>
+              <input type="email" name="reply_to" class="form-input" placeholder="Your Email" required>
+            </div>
+            
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+            
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!--- custom js link-->
+  <script src="./assets/js/script.js"></script>
+
+  <!--- ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+  <!-- Include EmailJS SDK to send email-->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("tp3fdMNcEg7OZTa9P"); // Replace with your EmailJS user ID
+  })();
+</script>
+</body>
+
+</html>
