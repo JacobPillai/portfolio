@@ -68,6 +68,8 @@ Here are some of the projects I've worked on to solve personal challenges and ap
 
 ---
 
+https://jacobpillai.github.io/portfolio/ live demo
+
 ## License
 
 This project is licensed under the MIT License.
